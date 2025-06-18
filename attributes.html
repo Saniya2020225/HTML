@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        a[href="https://google.com"]{
+            background-color: rgb(42, 165, 114);
+        }
+        /* for end */
+         a[href$=".com"]{
+            background-color: rgb(42, 165, 114);
+        }
+        /* for starting */
+        a[href^="kart"]{
+            background-color: rgb(101, 42, 165);
+        }
+        /* for whole */
+         a[href*=".in"]{
+            background-color: rgb(165, 42, 42);
+        } 
+    </style>
+    <a href="https://google.com">google</a>
+    <a href="https://flipkart.in">flipkart</a>
+</body>
+</html>    
